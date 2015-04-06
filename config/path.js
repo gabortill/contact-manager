@@ -24,7 +24,7 @@ module.exports = {
 		entry: 'development/sass/main.scss'
 	},
 	view: {
-		dest: 'development/tmp/templates.js',
+		dest: 'production/js/templates.js',
 		srcs: 'development/view/**/*.tpl.html'
 	}
 };
