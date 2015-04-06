@@ -1,0 +1,1 @@
+# Client side contact manager with AngularJS
