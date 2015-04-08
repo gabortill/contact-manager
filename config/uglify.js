@@ -8,7 +8,15 @@ module.exports = {
 			sourceMapName: '<%= path.js.main.min %>.map'
 		},
 		files: {
-			'<%= path.js.main.min %>': '<%= path.js.main.dev %>'
+			'<%= path.js.main.min %>': [
+				'development/js/module.js',
+				'development/js/routes.js',
+				'development/js/controllers/**/*.js',
+				'development/js/directives/**/*.js',
+				'development/js/services/**/*.js'
+				//'development/js/directives/businessCard.directive.js'
+				//'<%= path.js.main.dev %>'
+			]
 		}
 	}
 };

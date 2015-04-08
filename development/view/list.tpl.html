@@ -1,1 +1,4 @@
-<h1>home page</h1>
+<div ng-if="!list.contacts.length">you can add contacts above</div>
+<div ng-if="list.contacts.length">you have {{ list.contacts.length }} contacts</div>
+
+<business-card ng-repeat="member in list.contacts | filter:list.search | orderBy:list.orderBy.value"></business-card>
