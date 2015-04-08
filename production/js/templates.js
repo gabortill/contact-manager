@@ -12,5 +12,5 @@ angular.module("directive.businessCard.tpl.html", []).run(["$templateCache", fun
 
 angular.module("list.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("list.tpl.html",
-    "<div ng-if=\"!list.contacts.length\">you can add contacts above</div><div ng-if=\"list.contacts.length\">you have {{ list.contacts.length }} contacts</div><business-card ng-repeat=\"member in list.contacts | filter:list.search | orderBy:list.orderBy.value\"></business-card>");
+    "<div ng-if=\"!list.contacts.length\">you can add contacts above</div><div ng-if=\"list.contacts.length\"><div>you have {{ list.contacts.length }} contacts</div><br><input ng-model=\"list.search\" placeholder=\"search\" type=\"search\"><label><select ng-model=\"list.orderBy\" ng-options=\"option.label for option in list.options track by option.value\"></select></label><business-card ng-repeat=\"member in list.contacts | filter:list.search | orderBy:list.orderBy.value\"></business-card></div>");
 }]);
