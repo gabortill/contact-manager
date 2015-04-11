@@ -2,8 +2,6 @@
 	'use strict';
 
 	function AddController($location, $scope, ContactService) {
-		console.log('add controller');
-
 		var self = this;
 
 		$scope.$watch('avatar', function () {
