@@ -15,6 +15,11 @@
 			.when('/404', {
 				templateUrl: '404.tpl.html'
 			})
+			.when('/add', {
+				controller: 'AddController',
+				controllerAs: 'edit',
+				templateUrl: 'edit.tpl.html'
+			})
 			.otherwise({
 				redirectTo: '/404'
 			});
