@@ -14,8 +14,6 @@ module.exports = {
 				'development/js/controllers/**/*.js',
 				'development/js/directives/**/*.js',
 				'development/js/services/**/*.js'
-				//'development/js/directives/businessCard.directive.js'
-				//'<%= path.js.main.dev %>'
 			]
 		}
 	}
