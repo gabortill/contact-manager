@@ -44,7 +44,19 @@
 				contacts.push(contact);
 			},
 			getContacts: function () {
+
+				// add the original index into every obj
+				for (var i = 0, len = contacts.length; i < len; i++) {
+					contacts[i].originalIndex = i;
+				}
+
 				return contacts;
+			},
+			getContactsByIndex: function (index) {
+				return contacts[index];
+			},
+			updateContact: function (index, contact) {
+				contacts[index] = contact;
 			}
 		};
 	}

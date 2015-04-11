@@ -20,6 +20,11 @@
 				controllerAs: 'edit',
 				templateUrl: 'edit.tpl.html'
 			})
+			.when('/edit/:index', {
+				controller: 'ModifyController',
+				controllerAs: 'edit',
+				templateUrl: 'edit.tpl.html'
+			})
 			.otherwise({
 				redirectTo: '/404'
 			});

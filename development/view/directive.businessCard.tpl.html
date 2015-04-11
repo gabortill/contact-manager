@@ -4,7 +4,7 @@
             <img data-ng-src="{{ member.avatar }}" />
             <div>{{ member.name }}</div>
             <div>{{ member.position }}</div>
-            <a data-ng-href="/edit">edit</a>
+            <a data-ng-href="/edit/{{ member.originalIndex }}">edit</a>
         </div>
         <div class="card__flipper__back card__flipper__item">
             <div>{{ member.email }}</div>

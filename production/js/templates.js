@@ -7,7 +7,7 @@ angular.module("404.tpl.html", []).run(["$templateCache", function($templateCach
 
 angular.module("directive.businessCard.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("directive.businessCard.tpl.html",
-    "<section class=\"card\"><div class=\"card__flipper\"><div class=\"card__flipper__front card__flipper__item\"><img data-ng-src=\"{{ member.avatar }}\"><div>{{ member.name }}</div><div>{{ member.position }}</div><a data-ng-href=\"/edit\">edit</a></div><div class=\"card__flipper__back card__flipper__item\"><div>{{ member.email }}</div><div>{{ member.phone }}</div><div>{{ member.birth }}</div><div>{{ member.country }}</div><div>{{ member.city }}</div><div>{{ member.street }}</div></div></div></section>");
+    "<section class=\"card\"><div class=\"card__flipper\"><div class=\"card__flipper__front card__flipper__item\"><img data-ng-src=\"{{ member.avatar }}\"><div>{{ member.name }}</div><div>{{ member.position }}</div><a data-ng-href=\"/edit/{{ member.originalIndex }}\">edit</a></div><div class=\"card__flipper__back card__flipper__item\"><div>{{ member.email }}</div><div>{{ member.phone }}</div><div>{{ member.birth }}</div><div>{{ member.country }}</div><div>{{ member.city }}</div><div>{{ member.street }}</div></div></div></section>");
 }]);
 
 angular.module("edit.tpl.html", []).run(["$templateCache", function($templateCache) {
