@@ -10,7 +10,7 @@ module.exports = function (grunt) {
 		require('time-grunt')(grunt);
 	}
 
-	//loads the various task configuration files
+	// loads the various task configuration files
 	var configs = require('load-grunt-configs')(grunt);
 
 	grunt.initConfig(configs);
@@ -21,7 +21,7 @@ module.exports = function (grunt) {
 		'autoprefixer',
 		'html2js:main',
 		'jsbeautifier',
-		'jshint',
+		'jscs',
 		'uglify',
 		'concurrent:default'
 	]);

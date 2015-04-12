@@ -19,11 +19,11 @@ module.exports = {
 	},
 	options: {
 		js: {
-			braceStyle: "collapse",
+			braceStyle: 'collapse',
 			breakChainedMethods: false,
 			e4x: false,
 			evalCode: false,
-			indentChar: " ",
+			indentChar: ' ',
 			indentLevel: 0,
 			indentSize: 4,
 			indentWithTabs: true,

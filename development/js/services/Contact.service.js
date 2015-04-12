@@ -46,7 +46,10 @@
 			getContacts: function () {
 
 				// add the original index into every obj
-				for (var i = 0, len = contacts.length; i < len; i++) {
+				var i = 0;
+				var len = contacts.length;
+
+				for (; i < len; i++) {
 					contacts[i].originalIndex = i;
 				}
 

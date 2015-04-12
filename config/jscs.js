@@ -2,11 +2,13 @@
 
 module.exports = {
 	client: {
-		src: [
-			'<%= path.js.main.dev %>'
-		],
+		files: {
+			src: [
+				'<%= path.js.main.dev %>'
+			]
+		},
 		options: {
-			jshintrc: '.jshintrc'
+			config: '.jscsrc'
 		}
 	},
 	grunt: {
@@ -15,15 +17,13 @@ module.exports = {
 			'<%= path.js.config %>'
 		],
 		options: {
-			node: true
+			config: '.jscsrc'
 		}
 	},
 	server: {
 		src: [
-			'<%= path.node.entry %>'
-		],
-		options: {
-			node: true
-		}
+			'Gruntfile.js',
+			'<%= path.js.config %>'
+		]
 	}
 };

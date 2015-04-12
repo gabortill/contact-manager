@@ -9,7 +9,7 @@ module.exports = {
 		],
 		tasks: [
 			'jsbeautifier:grunt',
-			'jshint:grunt'
+			'jscs:grunt'
 		]
 	},
 	index: {
@@ -24,7 +24,7 @@ module.exports = {
 		],
 		tasks: [
 			'jsbeautifier:client',
-			'jshint:client',
+			'jscs:client',
 			'uglify'
 		]
 	},
@@ -34,7 +34,7 @@ module.exports = {
 		],
 		tasks: [
 			'jsbeautifier:server',
-			'jshint:server'
+			'jscs:server'
 		]
 	},
 	sass: {
