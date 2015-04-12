@@ -43,13 +43,6 @@
         <input id="street" ng-model="edit.contact.street" type="text" />
     </label>
     <br/>
-    <!--
-    <div>{{ member.phone }}</div>
-    <div>{{ member.birth }}</div>
-    <div>{{ member.country }}</div>
-    <div>{{ member.city }}</div>
-    <div>{{ member.street }}</div>
-    -->
     <label for="avatar">
         <span class="placeholder">avatar</span>
         <input id="avatar" data-img-to-base64 type="file" />
@@ -58,4 +51,5 @@
     <br/>
     <br/>
     <button type="submit">save</button>
+    <button data-ng-click="edit.remove()" data-ng-if="edit.isModify" type="button">delete</button>
 </form>

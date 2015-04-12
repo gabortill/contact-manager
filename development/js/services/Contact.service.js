@@ -58,6 +58,9 @@
 			getContactsByIndex: function (index) {
 				return contacts[index];
 			},
+			removeContactByIndex: function (index) {
+				contacts.splice(index, 1);
+			},
 			updateContact: function (index, contact) {
 				contacts[index] = contact;
 			}
