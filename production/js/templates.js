@@ -17,5 +17,5 @@ angular.module("edit.tpl.html", []).run(["$templateCache", function($templateCac
 
 angular.module("list.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("list.tpl.html",
-    "<a data-ng-href=\"/add\">add contact</a><div ng-if=\"!list.contacts.length\">you can add contacts above</div><div ng-if=\"list.contacts.length\"><div>you have {{ list.contacts.length }} contacts</div><br><input ng-model=\"list.search\" placeholder=\"search\" type=\"search\"><label><select ng-model=\"list.orderBy\" ng-options=\"option.label for option in list.options track by option.value\"></select></label><business-card ng-repeat=\"member in list.contacts | filter:list.search | orderBy:list.orderBy.value\"></business-card></div>");
+    "<a data-ng-href=\"/add\">add contact</a><div ng-if=\"!list.contacts.length\">Why don't you add your first contact above?</div><div ng-if=\"list.contacts.length\"><div>you have {{ list.contacts.length }} contacts</div><br><input ng-model=\"list.search\" placeholder=\"search\" type=\"search\"><label><select ng-model=\"list.orderBy\" ng-options=\"option.label for option in list.options track by option.value\"></select></label><business-card ng-repeat=\"member in list.contacts | filter:list.search | orderBy:list.orderBy.value\"></business-card></div>");
 }]);
