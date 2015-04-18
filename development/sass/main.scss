@@ -1,1 +1,39 @@
 @import "normalize";
+
+.card {
+    cursor: pointer;
+    margin-bottom: 5px;
+    min-height: 200px;
+    perspective: 1000px;
+    position: relative;
+    width: 300px;
+
+    &__flipper {
+        height: 100%;
+        position: absolute;
+        transform-origin: right center;
+        transform-style: preserve-3d;
+        transition: transform 0.5s ease-out;
+        width: 100%;
+
+        &--inverse {
+            transform: translateX(-100%) rotateY(-180deg);
+        }
+
+        &__item {
+            backface-visibility: hidden;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+        }
+
+        &__front {
+            background: #FEBD2D;
+        }
+
+        &__back {
+            background: #FE5F57;
+            transform: rotateY(180deg);
+        }
+    }
+}
