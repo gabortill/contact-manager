@@ -1,4 +1,7 @@
-# Client side contact manager with AngularJS
+# Front-end part of a contact manager with AngularJS
+
+# Yet to come
+* styling
 
 ## Prerequisted technology
 * <a href="https://nodejs.org/" target="_blank">Node.js</a>
